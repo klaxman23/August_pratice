@@ -6,4 +6,4 @@ c = 99
 
 sum = a + (2 * b) + c
 
-print(sum)
+print(f"Result : {sum}")
