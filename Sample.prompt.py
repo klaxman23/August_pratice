@@ -1,23 +1,18 @@
-# Write a program to do not print the not repeated srting.
+# Write a program do not print the not repeted letters
 
-# naa = "Abbccdefgh"
+# naa = "NNabcdegghh"
 
 # for i in naa:
 #     if naa.count(i)==1:
 #         print(i,end="")
         
-#===================================================================#
+# Write a program in a list menthod
 
-# Write a program to example for shallow copy
+# my_list = [1,2,3,4]
 
-na = [1,2,3,4]
+# def foo(x):
+#     x.append(5)
+#     return x
 
-def foo(x):
-    x.append(5)
-    return x
-
-
-
-print(foo(na.copy()))
-print(na)
-    
+# print(foo(my_list.copy()))
+# print(my_list)
