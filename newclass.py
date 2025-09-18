@@ -1,4 +1,8 @@
-import calender
+from fastapi import FastAPI
 
-s1 = calender.Student("Kavya",23,1001)
-print(s1.name,s1.age,s1.roll_no)
+app = FastAPI()
+
+@app.get("/")
+
+def root():
+    return {"Hello":"World"}
