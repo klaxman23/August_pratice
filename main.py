@@ -1,8 +1,10 @@
-my_dict = {"Name":"Suma",
-           "Age":30,
-           "Roll_no":1011}
+from google import genai
 
-# print(my_dict)
+client = genai.Client()
 
-for value in my_dict.items():
-    print(value)
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="Explain how AI works in a few words",
+)
+
+print(response.text)
